@@ -8,6 +8,8 @@ interface UserInfo {
   age: number;
 }
 class UserStore {
+  // https://zh.mobx.js.org/enabling-decorators.html
+  // 由于decorators标准未定，MobX 6建议不用装饰器
   constructor() {
     makeAutoObservable(this);
   }
@@ -28,6 +30,6 @@ const store = {
   userStore: new UserStore(),
 };
 
-const { useStore } = useMobxReact(store);
+const { useStore, storeContext } = useMobxReact(store);
 
-export { useStore };
+export { useStore, store, storeContext };

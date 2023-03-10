@@ -4,6 +4,7 @@ import reactLogo from "./assets/react.svg";
 import { useStore } from "./store";
 import "./App.css";
 import UserInfo from "./components/UserInfo";
+import { UserInfoClass } from "./components/UserInfoClass";
 
 function App() {
   const { userStore } = useStore();
@@ -25,6 +26,7 @@ function App() {
       <div className="card">
         <button onClick={addAge}>change</button>
         <UserInfo />
+        <UserInfoClass />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
