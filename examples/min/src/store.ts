@@ -1,5 +1,5 @@
 import { configure, makeAutoObservable } from "mobx";
-import { useMobxReact } from "../../../src/index";
+import { useMobxReact } from "use-mobx-react";
 
 configure({ enforceActions: "observed" });
 

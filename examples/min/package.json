@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "mobx": "^6.8.0",
     "mobx-react": "^7.6.0",
+    "mobx-react-lite": "^3.4.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "use-mobx-react": "workspace:^1.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
